@@ -12,14 +12,13 @@ int main() {
     printf("Processo filho iniciado.\n");
   }
   else if(pid > 0) {
-    printf("Processo pai iniciado.\n");
-    printf("PID do Filho: %d\n", pid);
     int i;
     for (i = 0; i < 10; i++) {
       sleep(1);
-      printf("Nope\n");
 
-      char bash_cmd[256] = "ps v 1 | grep -v MEM | awk '{print $9}'";
+      char bash_cmd[256];
+      sprintf(bash_cmd, "ps v %i | grep -v MEM | awk '{print $9}'", pid );
+
       char buffer[1000];
       FILE *pipe;
       int len;
@@ -41,7 +40,8 @@ int main() {
     _exit(1);
   }
   else {
-    // Ocorreu um erro
+    printf("Erro!\n");
+    return 255;
   }
 
   return 0;
