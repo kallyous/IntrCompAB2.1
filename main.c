@@ -10,13 +10,13 @@ int main() {
 
   if (pid == 0) {
     for (;;) {
-      malloc(4);
+      malloc(200);
     }
   }
   else if(pid > 0) {
     int i;
     for (i = 0; i < 10; i++) {
-      sleep(0.1);
+      usleep(50000);
 
       char bash_cmd[256];
       sprintf(bash_cmd, "ps v %i | grep -v MEM | awk '{print $9}'", pid );
