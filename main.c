@@ -4,13 +4,15 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-int main() {
+int main(int argc, char **argv) {
+
+  printf("Nome do arquivo: %s\n", argv[0]);
 
   int pid = fork();
 
   if (pid == 0) {
     for (;;) {
-      malloc(200);
+      malloc(100);
     }
   }
   else if(pid > 0) {
@@ -20,6 +22,7 @@ int main() {
 
       char bash_cmd[256];
       sprintf(bash_cmd, "ps v %i | grep -v MEM | awk '{print $9}'", pid );
+      // ps -eo pid,pcpu
 
       char buffer[1000];
       FILE *pipe;
