@@ -3,26 +3,27 @@
 * Página do repositório do trabalho ([link GitHub](TODO)) 
 
 * Discente 1
-	* Nome: TODO
-	* Matrícula: TODO 
-	* Distribuição da nota (%): TODO
+	* Nome: Lucas Carvalho
+	* Matrícula: 18211784
+	* Distribuição da nota (%): 1/3
 * Discente 2
-	* Nome: TODO
+	* Nome: Vitor Magno
 	* Matrícula: TODO
-	* Distribuição da nota (%): TODO
+	* Distribuição da nota (%): 1/3
 * Discente 3
-	* Nome: TODO
+	* Nome: Suleiman Balde
 	* Matrícula: TODO
-	* Distribuição da nota (%): TODO
+	* Distribuição da nota (%): 1/3
 	
 # Resultados
 
-* TODO: Plotar um gráfico com os resultados das medições das seguintes métricas utilizadas para avaliar o comportamento do **processo filho**:
-	*  **UCP**: consumo da UCP em porcentagem.
-	*  **UCP-MEM**: consumo da memória principal em Kilobytes.
-* TODO: Cada métrica deve ser plotada em duas curvas separadas.
-* TODO: o eixo das abscissas deve representar o tempo medido a cada segundo e o eixo das coordenadas deve representar a métrica medida.
+**Uso de UCP no Processo Filho**
 
+![Uso de UCP](https://i.imgur.com/b31zDvy.png "Gráfico UCP")
+
+**Uso de UCP + MEM no Processo Filho (Corrigir MEM para Kilobytes)**
+
+![https://i.imgur.com/b6sbjtZ.png](https://i.imgur.com/b6sbjtZ.png "Gráfico UCP + RAM")
 
 # Discussão
 
