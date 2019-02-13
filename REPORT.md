@@ -1,19 +1,19 @@
 # Identificação
 
-* Página do repositório do trabalho ([link GitHub](TODO)) 
+* Página do repositório do trabalho: [link GitHub](https://github.com/kallyous/IntrCompAB2.1)
 
 * Discente 1
 	* Nome: Lucas Carvalho
 	* Matrícula: 18211784
-	* Distribuição da nota (%): 1/3
+	* Distribuição da nota (%): 33.33
 * Discente 2
 	* Nome: Vitor Magno
 	* Matrícula: TODO
-	* Distribuição da nota (%): 1/3
+	* Distribuição da nota (%): 33.33
 * Discente 3
 	* Nome: Suleiman Balde
 	* Matrícula: TODO
-	* Distribuição da nota (%): 1/3
+	* Distribuição da nota (%): 33.33
 	
 # Resultados
 
