@@ -8,7 +8,7 @@
 	* Distribuição da nota (%): 33.33
 * Discente 2
 	* Nome: Vitor Magno
-	* Matrícula: TODO
+	* Matrícula: 18211825
 	* Distribuição da nota (%): 33.33
 * Discente 3
 	* Nome: Suleiman Balde
