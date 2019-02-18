@@ -11,8 +11,8 @@
 	* Matrícula: 18211825
 	* Distribuição da nota (%): 33.33
 * Discente 3
-	* Nome: Suleiman Balde
-	* Matrícula: TODO
+	* Nome: Suleimane Baldé
+	* Matrícula: 18210020
 	* Distribuição da nota (%): 33.33
 	
 # Resultados
