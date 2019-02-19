@@ -54,19 +54,19 @@ Porém, ao se utilizar o navegador Firefox simultaneamente, duas coisas foram no
 Esperávamos que o navegador ficasse extremamente irresponsivo, já que durante os testes com apenas o software deste projeto, ele consumiu quase todo o tempo da UCP, mas isso não aconteceu.  
 Ao contrário do que pensávamos, simplesmente o sistema operacional deu menos tempo de UCP para o software de testes, mantendo o Firefox rodando com quase nenhum impacto ao seu funcionamento normal.
 
-Durante este teste, como pode ser observado no gráfico, há dois momentos em que o processo filho parece usar mais de 100% da UCP. Esse comportamento foi apresentado algumas vezes na maioria dos testes e em todas as máquinas que testamos, não somente na máquina dos testes finais.  
-Embora não tenhamos chegado a uma conclusão -- muito menos unanimidade -- sobre a causa do fenômeno, acreditamos ser um erro interno de cálculo do próprio sistema ou algum outro fenômeno relacionado a hyper-threading, multi-threading ou mesmo alguma optimização que economize ou ganhe tempo em processos recorrentes e repetitivos, causando variação superior a 100%. (pode ser uma optimização tanto de hardware, no processador, ou mesmo algum algoritmo do sistema operacional).
+Durante este teste, como pode ser observado no gráfico, há dois momentos em que o processo filho parece usar mais de 100% da UCP, nos segundos 1 (105%) e 2 (106%). Esse comportamento foi apresentado algumas vezes na maioria dos testes e em todas as máquinas que testamos, não somente na máquina dos testes finais.  
+Embora não tenhamos chegado a uma conclusão - muito menos unanimidade - sobre a causa do fenômeno, acreditamos ser um erro interno de cálculo do próprio sistema ou algum outro fenômeno relacionado a hyper-threading, multi-threading ou mesmo alguma optimização que economize ou ganhe tempo em processos recorrentes e repetitivos, causando variação superior a 100%. (pode ser uma optimização tanto de hardware, no processador, ou mesmo algum algoritmo do sistema operacional).
 
 Em suma, durante o teste de utilização intensa da UCP, o computador não travou nem ficou irresponsivo de forma notável, e atribuímos este comportamento ao balanceamento e distribuição do tempo de UCP dos processos, feito pelo sistema operacional.
 
 Nota: Se houvesse mais tempo para a realização do projeto, seria muito interessante rodar o mesmo software com dois ou três filhos, para observar a distribuição do tempo de processamento feito pelo sistema operacional entre os filhos e esquadrinhar seus respectivos gráficos.  
-Para isso, também seria conveniente usar um método de geração aotomatizada de gráficos.
+Para isso, também seria conveniente usar um método de geração automatizada de gráficos.
 
 ## Utilização Intensa da UCP e da Memória
 
 A característica mais marcante desta versão dos testes foi a necessidade de ajustar os valores de memória alocada por ciclo para cada máquina diferente testada. E ainda assim houve variações nos resultados, para uma mesma máquina executando o software de testes diversas vezes.
 
-Mesmo em máquinas com a mesma quantidade de memória e alocando o mesmo valor por ciclo do processo filho, em algumas a memória consumida era pouca, abaixo de 10% da memória total, enquanto outras a memória superava 60% e a máquina travava -- as vezes indefinidamente, necessitando-se reiniciar o computador.
+Mesmo em máquinas com a mesma quantidade de memória e alocando o mesmo valor por ciclo do processo filho, em algumas a memória consumida era pouca, abaixo de 10% da memória total, enquanto outras a memória superava 60% e a máquina travava - as vezes indefinidamente, necessitando-se reiniciar o computador.
 
 Outras máquinas travaram com menos de 40% da memória tendo sido alocada, enquanto a máquina final de testes, rodando os testes logo após ter sido inicializada, atingiu quase 80% de sua memória, com um breve momento de irresponsividade após 8 segundos de execução.
 
@@ -81,7 +81,7 @@ Como elementos gráficos ocupam memória em grande quantidade (note como as plac
 **2. Fragmentação da memória**
 
 Uma memória fragmentada acaba por ter partes disponíveis de sua memória que não podem ser alocadas por não estarem contínuas, e quanto maior o tempo de execução do sistema operacional e outros processos, maior a chance de haver secções da memória fragmentadas.  
-Testamos o software em vários computadores do IC-UFAL e máquinas praticamente idênticas tiveram resultados diferentes no limite de alocação de memória, bem como as mesmas máquinas mostravam-se capazes de alocar diferentes quantidades de memória (antes de travarem ou tornarem-se irresponsivas) ao executar o mesmo teste várias vezes -- e com os mesmos valores de alocação.  
+Testamos o software em vários computadores do IC-UFAL e máquinas praticamente idênticas tiveram resultados diferentes no limite de alocação de memória, bem como as mesmas máquinas mostravam-se capazes de alocar diferentes quantidades de memória (antes de travarem ou tornarem-se irresponsivas) ao executar o mesmo teste várias vezes - e com os mesmos valores de alocação.  
 Mesmo para o computador dos testes finais, só foram obtidos valores persistentes quando o software de testes foi rodado pouco após a inicialização do sistema, sem dar muito tempo para a memória ser fragmentada por outros processos.
 
 ## Conclusão
