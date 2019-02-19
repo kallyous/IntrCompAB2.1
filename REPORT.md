@@ -21,12 +21,12 @@
 
 Uso da UCP  
 ![Uso Exclusivo de UCP](https://i.imgur.com/OYpf0FI.png)
-
+  
 ## Teste Conjunto do Uso de UCP e Memória
 
 Uso de UCP e Memória  
 ![Uso de UCP no teste com UCP e Memória](https://i.imgur.com/MngPAJm.png)
-
+  
 Uso da Memória  
 ![Uso de Memória em kilobytes](https://i.imgur.com/bYJiDl7.png)
 
