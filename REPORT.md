@@ -34,7 +34,7 @@ Uso da Memória
 
 ## Considerações Iniciais
 
-Testes iniciais durante o desenvolvimento do projeto foram realizados em diversas máquinas do [IC-UFAL](alt="Instituto de Computação - Universidade Federal de Alagoas"), com alguns efeitos interessantes à discussão.
+Testes iniciais durante o desenvolvimento do projeto foram realizados em diversas máquinas do IC-UFAL (Instituto de Computação - Universidade Federal de Alagoas), com alguns efeitos interessantes à discussão.
 
 Testes em diversas máquinas demonstraram (para os testes conjuntos de UCP e Memória) que processadores mais potentes resultavam em mais rápido enchimento da memória.  
 Isso causou o interessante fenômeno em que máquinas mais potentes travaram ou ficaram irresponsivas alocando a mesma quantidade de memória por ciclo que máquinas menos potentes que conseguiam concluir os testes sem travar e mais responsivas.  
@@ -43,7 +43,7 @@ Contudo, somente os dados a respeito dos testes finais feitos com uma máquina e
 Para esquadrinhar os gráficos dos testes finais, somente o software do projeto foi executado no computador, sem outros programas ou processos além dos natios do sistema operacional.  
 Para os diversos outros testes feitos, a fim de discussão, o navegador web Firefox foi utilizado em conjunto com os testes para avaliar o comportamento do computador.
 
-Os testes finais foram realizados num notebook da marca Positivo, com UCP de 1.5 GHz (dois núcleos) e 4GB de memória principal, sistema operacional [Lubuntu 18.04 LTS](alt="Distro de Linux baseada no Ubuntu 18.04 LTS, com interface mais leve, para computadores de baixo desempenho") rodando nativo (sem máquina virtual).
+Os testes finais foram realizados num notebook da marca Positivo, com UCP de 1.5 GHz (dois núcleos) e 4GB de memória principal, sistema operacional [Lubuntu 18.04 LTS](https://lubuntu.me) rodando nativo (sem máquina virtual).
 
 ## Utilização Intensa da UCP
 
@@ -59,8 +59,8 @@ Embora não tenhamos chegado a uma conclusão -- muito menos unanimidade -- sobr
 
 Em suma, durante o teste de utilização intensa da UCP, o computador não travou nem ficou irresponsivo de forma notável, e atribuímos este comportamento ao balanceamento e distribuição do tempo de UCP dos processos, feito pelo sistema operacional.
 
-~Nota: Se houvesse mais tempo para a realização do projeto, seria muito interessante rodar o mesmo software com dois ou três filhos, para observar a distribuição do tempo de processamento feito pelo sistema operacional entre os filhos e esquadrinhar seus respectivos gráficos.  
-Para isso, também seria conveniente usar um método de geração aotomatizada de gráficos.~
+Nota: Se houvesse mais tempo para a realização do projeto, seria muito interessante rodar o mesmo software com dois ou três filhos, para observar a distribuição do tempo de processamento feito pelo sistema operacional entre os filhos e esquadrinhar seus respectivos gráficos.  
+Para isso, também seria conveniente usar um método de geração aotomatizada de gráficos.
 
 ## Utilização Intensa da UCP e da Memória
 
