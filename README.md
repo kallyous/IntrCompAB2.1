@@ -12,6 +12,8 @@ As instruções para a reprodução dos experimentos constam em ```INSTALL.md```
 
 O relatório com o resultado e ponderações a respeito do projeto estão em ```REPORT.md```
 
+O arquivo ```Resultados.ods``` contém por completo os dados numéricos resultantes dos testes finais do experimento junto com os gráficos originais utilizados no relatório do trabalho.
+
 ---
 
 ### Discentes
